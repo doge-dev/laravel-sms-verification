@@ -11,9 +11,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "5.*",
-        "aws/aws-sdk-php": "^3.62",
-        "guzzlehttp/guzzle": "*"
+        "aws/aws-sdk-php": "^3.62"
     },
     "autoload": {
         "psr-4": {
