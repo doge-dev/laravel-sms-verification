@@ -1,0 +1,23 @@
+{
+    "name": "doge-dev/laravel-sms-verification",
+    "description": "Library for sending out and verifying SMS codes using AWS SNS",
+    "keywords": ["laravel", "sms", "verification", "aws"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marko Maletic",
+            "email": "maletic.marko@live.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "5.*",
+        "aws/aws-sdk-php": "^3.62",
+        "guzzlehttp/guzzle": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DogeDev\\SMSVerification\\": "src/"
+        }
+    }
+}
