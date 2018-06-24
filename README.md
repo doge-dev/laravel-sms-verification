@@ -28,8 +28,16 @@ Add the service provider in ```config/app.php```
 ```php
 DogeDev\SMSVerification\SMSVerificationServiceProvider::class,
 ```
+Add your AWS credentials to you .env file:
 
-You can add SMS Verification to any model, and it will create:
+```
+DOGEDEV_AWS_SMS_ID=your-aws-access-key-id
+DOGEDEV_AWS_SMS_SECRET=your-aws-secret-access-key
+```
+
+NOTE: Please reffer to AWS documentation for best practices regarding AWS credentails and possibly consider creating a dedicated user with limitted privileges only for sending SMS messages
+
+You can add SMS verification to any model by adding the VerifiesSMS trait supplied in this library, and it will create:
 
 * a function **setSMSVerificationNumber($mobile)** - sets the mobile number and sends out the SMS message containg the verification code
 * a function **verifySMSCode($code)** -verifies the SMS code 
