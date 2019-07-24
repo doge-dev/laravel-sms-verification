@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Aws\Sns\SnsClient;
 
 class SMSVerificationServiceProvider extends ServiceProvider
 {
