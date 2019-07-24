@@ -46,7 +46,7 @@ class SMSVerificationServiceProvider extends ServiceProvider
 
             return new SnsClient([
                 'version'     => 'latest',
-                'region'      => 'us-west-2',
+                'region'      => env('DOGEDEV_AWS_SMS_REGION'),
                 'credentials' => [
                     'key'    => env('DOGEDEV_AWS_SMS_ID'),
                     'secret' => env('DOGEDEV_AWS_SMS_SECRET'),
