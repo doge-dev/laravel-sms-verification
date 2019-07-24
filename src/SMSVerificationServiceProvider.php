@@ -42,7 +42,7 @@ class SMSVerificationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('FDogeDevSNSClientSingleton', function (){
+        $this->app->singleton('DogeDevSNSClientSingleton', function (){
 
             return new SnsClient([
                 'version'     => 'latest',
