@@ -19,5 +19,12 @@
         "psr-4": {
             "Freelabois\\SMSVerification\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Freelabois\\SMSVerification\\SMSVerificationServiceProvider"
+            ]
+        }
     }
 }
