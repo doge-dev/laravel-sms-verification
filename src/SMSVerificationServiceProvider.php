@@ -1,6 +1,6 @@
 <?php
 
-namespace DogeDev\SMSVerification;
+namespace Freelabois\SMSVerification;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -42,7 +42,7 @@ class SMSVerificationServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('DogeDevSNSClientSingleton', function (){
+        $this->app->singleton('FDogeDevSNSClientSingleton', function (){
 
             return new SnsClient([
                 'version'     => 'latest',

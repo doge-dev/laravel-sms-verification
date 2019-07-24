@@ -1,6 +1,6 @@
 <?php
 
-namespace DogeDev\SMSVerification;
+namespace Freelabois\SMSVerification;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace DogeDev\SMSVerification\Exceptions;
+namespace Freelabois\SMSVerification\Exceptions;
 
 class TooManySMSVerificationAttempts extends \Exception
 {
