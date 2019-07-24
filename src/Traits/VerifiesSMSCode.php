@@ -108,6 +108,7 @@ trait VerifiesSMSCode
     private function setSMSVerificationStatus(bool $status)
     {
         $this->sms_verification_status = $status;
+        $this->sms_verification_code = null;
 
         $this
             ->updateSMSVerificationAttempts($status)
