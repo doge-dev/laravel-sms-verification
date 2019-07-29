@@ -1,11 +1,12 @@
 <?php
 
-namespace DogeDev\SMSVerification;
+namespace Freelabois\SMSVerification;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
+use Aws\Sns\SnsClient;
 
 class SMSVerificationServiceProvider extends ServiceProvider
 {
@@ -45,7 +46,7 @@ class SMSVerificationServiceProvider extends ServiceProvider
 
             return new SnsClient([
                 'version'     => 'latest',
-                'region'      => 'us-west-2',
+                'region'      => env('DOGEDEV_AWS_SMS_REGION'),
                 'credentials' => [
                     'key'    => env('DOGEDEV_AWS_SMS_ID'),
                     'secret' => env('DOGEDEV_AWS_SMS_SECRET'),
